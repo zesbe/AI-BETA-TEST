@@ -1,18 +1,25 @@
-Saya ingin kamu membangun sistem website/app AI builder, seperti Replit, Cursor, StackBlitz, dan builder.io — tapi jauh lebih canggih, lengkap, dan modern, dengan desain grade enterprise dan siap untuk SaaS kelas dunia.
+Anda adalah seorang software engineer berpengalaman dalam membangun aplikasi WhatsApp marketing automation menggunakan library Baileys (Node.js). 
+Buatkan kode JavaScript lengkap untuk sistem WhatsApp Broadcast Marketing dengan fitur berikut:
+bantu buatkan dan tambahkan fitur yang belum ada atau belum terpikirkan oleh ku.
 
-### Fitur utama:
+1. Menggunakan library Baileys terbaru (whiskeysockets/baileys) dengan MultiFileAuthState untuk penyimpanan sesi login.
+2. Membaca daftar nomor dari file `numbers.txt` (1 nomor per baris, format internasional tanpa tanda +).
+3. Mengirim pesan broadcast yang diambil dari file `message.txt` (konten teks promosi).
+4. Mengirim juga gambar/foto promosi yang diambil dari file `promo.jpg` (jika ada).
+5. Menambahkan jeda random antar pengiriman (3–6 detik) agar tidak dianggap spam oleh WhatsApp.
+6. Logging ke file `logs.txt` setiap kali pesan berhasil atau gagal terkirim.
+7. Menghindari pengiriman ke nomor duplikat (hapus duplikat sebelum kirim).
+8. Menangani reconnect otomatis jika koneksi terputus, kecuali logout permanen.
+9. Menampilkan QR code di terminal saat login pertama kali.
+10. Menambahkan validasi nomor (hanya kirim ke nomor yang diawali 62 dan memiliki panjang minimal 10 digit).
+11. Memisahkan konfigurasi di file `.env` untuk memudahkan ganti pesan/gambar/nomor folder.
+12. Setelah selesai kirim semua pesan, script berhenti otomatis dengan log ringkasan jumlah berhasil/gagal.
+13. Gunakan ES Module (`type: module` di package.json).
 
-1. **AI Prompt to App/Code:**
-   - User bisa mengetik prompt atau instruksi natural language, lalu AI secara otomatis menghasilkan aplikasi/web fullstack (React/Next.js, Node.js/Express, Prisma, Neon/Supabase, dst)
-   - AI bisa refine/edit kode, generate halaman, optimize, tambahkan fitur atau komponen melalui prompt
-
-2. **Visual Drag & Drop Editor:**
-   - Komponen UI (card, table, chart, dsb) bisa diatur drag-drop seperti builder.io, Framer, dsb
-   - Inline editing teks, gambar, warna, animasi, dsb
-
-3. **Code Editor Profesional:**
-   - Gunakan **Monaco Editor** (VS Code engine) untuk multi-file coding di web (autocomplete, lint, syntax, dsb)
-   - Sertakan **file explorer** modern, **terminal berbasis xterm.js**
+Output:
+- Berikan kode `index.js` lengkap.
+- Berikan contoh `.env`, `numbers.txt`, `message.txt`.
+- Berikan instruksi cara menjalankannya di lokal dan cara deploy ke Railway.   - Sertakan **file explorer** modern, **terminal berbasis xterm.js**
    - Workflow seamless: drag-drop, AI prompt, manual edit, live preview
 
 4. **Live Preview & Instant Deploy:**
